@@ -61,7 +61,7 @@ This creates a completely new route on `http://localhost:8000/key`. Go there. Co
 
 # PostgreSQL
 
-If you have not yet installed PostgreSQL, you should follow the installation guide on [postgresql.org](https://www.postgresql.org/). Take a look at: https://www.postgresql.org/docs/11/tutorial-install.html.
+If you have not yet installed PostgreSQL, you should follow the installation guide on [postgresql.org](https://www.postgresql.org/). Take a look at: https://www.postgresql.org/docs/11/tutorial-install.html. Make sure to actually start Postgres: `pg_ctl -D /usr/local/var/postgres start`.
 
 After you succesfully setup PostgreSQL run:
 

@@ -1,3 +1,5 @@
+If you see words you don't know, scroll to the bottom.
+
 # Lumen API
 
 Why Lumen? Lumen is a micro-framework built on top of the Laravel framework. The framework is ideal for small apps and services that are optimized for speed. It's a good introduction to the MVC (Model View Controller) Pattern and PHP. Probably because PHP is developed in 1994 en became public in 1995, it has an immense community. And that makes it easier.
@@ -105,3 +107,18 @@ php -S localhost:8000 -t public
 This will serve the project on `http://localhost:8000/`. If this gives you an `Address already in use` error, try running your application on a different port by changing `8000` into `8080` (for example). For example, I have many projects running simultaneously, so I run this project on port 8085.
 
 If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/chrome/)) to `http://localhost:8000/`, you shold see something like: **Lumen (5.8.4) (Laravel Components 5.8.\*)**
+
+## words
+
+Framework
+Micro-framework
+
+| Word | Meaning |
+| ------ | ------ |
+| API (Application Programming Interface) | It's a set of clearly defined methods of communication among various components. A good API makes it easier to develop a computer program by providing all the building blocks. |
+| Framework | An abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. A software framework is a universal, reusable software environment that provides particular functionality. |
+| MVC (Model View Controller) | MVC design patterns decouples three major components (Models, Views, Controllers) allowing for efficient code reuse and parallel development. |
+| MVC Model | Responsible for managing the data of the application. It receives input from the controller. |
+| MVC View | The view means presentation of the model in a particular format. |
+| MVC Controller | Responds to the input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model. |
+| PHP | A general-purpose programming language _originally_ designed for web development. It's dynamic, but weak as well, which makes it easy to learn, but hard to master. |

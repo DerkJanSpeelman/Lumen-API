@@ -63,7 +63,7 @@ $router->get('/key', function() {
 
 This creates a completely new route on `http://localhost:8000/key`. Go there. Copy and paste the key as `APP_KEY` in your `.env`. For example, this could be: `APP_KEY=ksUQ93LoKdhW81K0JQY7FNnbvat72hN2` in your `.env` file. **Don't** copy this key, that's not secure.
 
-# PostgreSQL
+## PostgreSQL
 
 First of all: why PostgreSQL? To keep this answer as short as possible: we need a management system for managing data. So with or without PostgreSQL, we need a system like this. PostgreSQL supports much more data types compared to its competitors. We can even create our own data types. So PostgreSQL has a lot of capability. Built using an object-relational model, it supports complex structures and a breadth of built-in and user-defined data types. It provides extensive data capacity and is trusted for its data integrity. You may not need all of the advanced features PostgreSQL comes with, but since data needs can evolve quickly, there is undoubtedly clear benefit to having it all at your fingertips.
 
@@ -108,7 +108,9 @@ This will serve the project on `http://localhost:8000/`. If this gives you an `A
 
 If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/chrome/)) to `http://localhost:8000/`, you shold see something like: **Lumen (5.8.4) (Laravel Components 5.8.\*)**
 
-## words
+----------
+
+# Words
 
 | Word | Meaning |
 | ------ | ------ |

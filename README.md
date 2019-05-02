@@ -1,12 +1,14 @@
 # Lumen API
 
+Why Lumen? Lumen is a micro-framework built on top of the Laravel framework. The framework is ideal for small apps and services that are optimized for speed. It's a good introduction to the MVC (Model View Controller) Pattern and PHP. Probably because PHP is developed in 1994 en became public in 1995, it has an immense community. And that makes it easier.
+
 In order to follow this guide, the following requirements must be met:
 
  - PHP >= 7.1.3
  - Composer
  - PostgreSQL >= 11.2
 
-Installation guides for both of these programs can be found everywhere online. Make sure to install the programs in this specific order. To check if these programs are already installed on your computer, or to check if you have updated to the versions you need, open your terminal and run these commands:
+Installation guides for both of these programs can be found everywhere online. Make sure to install the programs in this specific order. To check if these programs are already installed on your computer, or to check if you have updated to the versions you need. Open your terminal. On MacOS you can find the terminal by searching (`Command + Space`) for the _Terminal_ application. (I recommend installing iTerm if you're on a Mac) On Windows you can find the terminal by searching (`Windows + S`) for the _CMD_ application. Run these commands:
 
 ```sh
 php -v
@@ -16,7 +18,7 @@ psql --version
 
 ## Installation
 
-Install Lumen using your shell or terminal. Open your terminal. On MacOS you can find this by searching (`Command + Space`) for the _Terminal_ application. On Windows you can find this by searching (`Windows + S`) for the _CMD_ application.
+Install Lumen using your shell or terminal. Open your terminal again if you closed it.
 
 Navigate to the location where you want the project folder to be created. In your terminal you can navigate like this. Where `\Users\username\folder` is the location you want to navigate to.
 
@@ -60,6 +62,8 @@ $router->get('/key', function() {
 This creates a completely new route on `http://localhost:8000/key`. Go there. Copy and paste the key as `APP_KEY` in your `.env`. For example, this could be: `APP_KEY=ksUQ93LoKdhW81K0JQY7FNnbvat72hN2` in your `.env` file. **Don't** copy this key, that's not secure.
 
 # PostgreSQL
+
+First of all: why PostgreSQL? To keep this answer as short as possible: we need a management system for managing data. So with or without PostgreSQL, we need a system like this. PostgreSQL supports much more data types compared to its competitors. We can even create our own data types. So PostgreSQL has a lot of capability. Built using an object-relational model, it supports complex structures and a breadth of built-in and user-defined data types. It provides extensive data capacity and is trusted for its data integrity. You may not need all of the advanced features PostgreSQL comes with, but since data needs can evolve quickly, there is undoubtedly clear benefit to having it all at your fingertips.
 
 If you have not yet installed PostgreSQL, you should follow the installation guide on [postgresql.org](https://www.postgresql.org/). Take a look at: https://www.postgresql.org/docs/11/tutorial-install.html. Make sure to actually start Postgres: `pg_ctl -D /usr/local/var/postgres start`.
 

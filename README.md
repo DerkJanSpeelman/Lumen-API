@@ -2,7 +2,7 @@ If you see words you don't know, scroll to the bottom.
 
 # Lumen API
 
-Why [Lumen](https://lumen.laravel.com/)? Lumen is a micro-framework built on top of the [Laravel](https://laravel.com/) framework. The framework is ideal for small apps and services that are optimized for speed. It's a good introduction to the MVC (Model View Controller) Pattern and [PHP](https://php.net/). Probably because PHP is developed in 1994 en became public in 1995, it has an immense community. And that makes it easier.
+Why [Lumen](https://lumen.laravel.com/)? Lumen is a micro-framework built on top of the [Laravel](https://laravel.com/) framework. The Lumen framework is ideal for small apps and services that are optimized for speed. It's a good introduction to the MVC (Model View Controller) Pattern and [PHP](https://php.net/). Probably because PHP is developed in 1994 en became public in 1995, it has an immense community. And that makes it easier.
 
 In order to follow this guide, the following requirements must be met:
 

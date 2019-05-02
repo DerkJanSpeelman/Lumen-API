@@ -69,7 +69,7 @@ This creates a completely new route on `http://localhost:8000/key`. Go there. Co
 
 First of all: why PostgreSQL? To keep this answer as short as possible: we need a management system for managing data. So with or without PostgreSQL, we need a system like this. PostgreSQL supports much more data types compared to its competitors. We can even create our own data types. So PostgreSQL has a lot of capability. Built using an object-relational model, it supports complex structures and a breadth of built-in and user-defined data types. It provides extensive data capacity and is trusted for its data integrity. You may not need all of the advanced features PostgreSQL comes with, but since data needs can evolve quickly, there is undoubtedly clear benefit to having it all at your fingertips.
 
-If you have not yet installed PostgreSQL, you should follow the installation guide on [postgresql.org](https://www.postgresql.org/). Take a look at: https://www.postgresql.org/docs/11/tutorial-install.html. Make sure to actually start Postgres: `pg_ctl -D /usr/local/var/postgres start`.
+If you have not yet installed PostgreSQL, you should follow the installation guide on [postgresql.org](https://www.postgresql.org/). Take a look at: https://www.postgresql.org/docs/11/tutorial-install.html (version 11, there might be newer versions available). Make sure to actually start Postgres: `pg_ctl -D /usr/local/var/postgres start`.
 
 After you succesfully setup PostgreSQL run:
 

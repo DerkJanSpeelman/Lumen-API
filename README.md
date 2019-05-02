@@ -71,6 +71,8 @@ First of all: why PostgreSQL? To keep this answer as short as possible: we need 
 
 If you have not yet installed PostgreSQL, you should follow the installation guide on [postgresql.org](https://www.postgresql.org/). Take a look at: https://www.postgresql.org/docs/11/tutorial-install.html (version 11, there might be newer versions available). Make sure to actually start Postgres: `pg_ctl -D /usr/local/var/postgres start`.
 
+On MacOS: if Postgres is succesfully installed, but it comes up with an error `Reason: image not found`. You might want to run `brew reinstall postgresql` to quickly reinstall postgres. This will not mess up your databases.
+
 After you succesfully setup PostgreSQL run:
 
 ```sh

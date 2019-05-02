@@ -115,10 +115,10 @@ If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/c
 | Word | Meaning |
 | ------ | ------ |
 | API (Application Programming Interface) | It's a set of clearly defined methods of communication among various components. A good API makes it easier to develop a computer program by providing all the building blocks. |
+| CLI (Command Line Interface) | Primary means of interaction in the 1960s, today it's a program that accepts commands as text input and converts commands into appropriate operating system functions. |
 | Framework | An abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. A software framework is a universal, reusable software environment that provides particular functionality. |
 | MVC (Model View Controller) | MVC design patterns decouples three major components (Models, Views, Controllers) allowing for efficient code reuse and parallel development. |
+| MVC Controller | Responds to the input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model. |
 | MVC Model | Responsible for managing the data of the application. It receives input from the controller. |
 | MVC View | The view means presentation of the model in a particular format. |
-| MVC Controller | Responds to the input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model. |
 | PHP | A general-purpose programming language _originally_ designed for web development. It's dynamic, but weak as well, which makes it easy to learn, but hard to master. |
-| CLI (Command Line Interface) | Primary means of interaction in the 1960s, today it's a program that accepts commands as text input and converts commands into appropriate operating system functions. |

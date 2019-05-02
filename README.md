@@ -110,9 +110,6 @@ If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/c
 
 ## words
 
-Framework
-Micro-framework
-
 | Word | Meaning |
 | ------ | ------ |
 | API (Application Programming Interface) | It's a set of clearly defined methods of communication among various components. A good API makes it easier to develop a computer program by providing all the building blocks. |

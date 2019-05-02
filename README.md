@@ -10,7 +10,9 @@ In order to follow this guide, the following requirements must be met:
  - Composer
  - PostgreSQL >= 11.2
 
-Installation guides for both of these programs can be found everywhere online. Make sure to install the programs in this specific order. To check if these programs are already installed on your computer, or to check if you have updated to the versions you need. Open your terminal. On MacOS you can find the terminal by searching (`Command + Space`) for the _Terminal_ application. (I recommend installing iTerm if you're on a Mac) On Windows you can find the terminal by searching (`Windows + S`) for the _CMD_ application. Run these commands:
+Installation guides for both of these programs can be found everywhere online. Make sure to install the programs in this specific order.
+
+To check if these programs are already installed on your computer, or to check if you have updated to the versions you need: open your terminal. On MacOS you can find the terminal by searching (`Command + Space`) for the _Terminal_ application (I recommend installing iTerm if you're on a Mac). On Windows you can find the terminal by searching (`Windows + S`) for the _CMD_ application. And run these commands:
 
 ```sh
 php -v

@@ -73,7 +73,7 @@ If you have not yet installed PostgreSQL, you should follow the installation gui
 
 On MacOS: if Postgres is succesfully installed, but it comes up with an error `Reason: image not found`. You might want to run `brew reinstall postgresql` to quickly reinstall postgres. This will not mess up your databases.
 
-After you succesfully setup PostgreSQL run:
+After you have succesfully setup PostgreSQL run:
 
 ```sh
 sudo -u postgres psql

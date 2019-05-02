@@ -20,7 +20,7 @@ psql --version
 
 ## Installation of Lumen
 
-[Install Lumen](https://lumen.laravel.com/docs) using your shell or terminal. Open your terminal again if you closed it.
+[Install Lumen](https://lumen.laravel.com/docs) using any CLI (Command Line Interface) like Terminal on MacOS or CMD on Windows. Open your terminal again if you closed it.
 
 Navigate to the location where you want the project folder to be created. In your terminal you can navigate like this. Where `\Users\username\folder` is the location you want to navigate to.
 
@@ -121,3 +121,4 @@ If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/c
 | MVC View | The view means presentation of the model in a particular format. |
 | MVC Controller | Responds to the input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model. |
 | PHP | A general-purpose programming language _originally_ designed for web development. It's dynamic, but weak as well, which makes it easy to learn, but hard to master. |
+| CLI (Command Line Interface) | Primary means of interaction in the 1960s, today it's a program that accepts commands as text input and converts commands into appropriate operating system functions. |

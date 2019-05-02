@@ -36,7 +36,9 @@ To install Lumen, run this command. Where `project-folder` is the name you want 
 composer create-project --prefer-dist laravel/lumen project-folder
 ```
 
-This will generate a bunge of files into `/project-folder`. Open the `.env` file in your favorite code-editor. I'm using [Atom](https://atom.io/), but feel free to use any other code-editor. Like [VSCode](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/) or even [Notepad++](https://notepad-plus-plus.org/). Anything will do.
+This will generate a bunge of files into `/project-folder`. Open the `.env` file in your favorite code-editor. This is a file where your environmental variables of your application are going to be. This means that any variable that is declared here, can be used everywhere in your application.
+
+For a code-editor, I'm using [Atom](https://atom.io/), but feel free to use any other code-editor. Like [VSCode](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/) or [Notepad++](https://notepad-plus-plus.org/). Anything will do.
 
 In the `.env` file you can see that the `APP_KEY=` is empty. We need this, though. So in order to generate the application key, we need to open `routes/web.php` and add a new route.
 
@@ -92,9 +94,11 @@ Create a database and a user. Hit enter for each command.
 
 ```sh
 CREATE DATABASE lumenapi;
-CREATE USER lumenuser WITH ENCRYPTED PASSWORD 'lumenpass';
+CREATE USER lumenapiuser WITH ENCRYPTED PASSWORD 'lumenpass';
 GRANT ALL PRIVILEGES ON DATABASE lumenapi TO lumenapiuser;
 ```
+
+Instead of _'lumenapi'_, you can give your database a different name. Same for the user _'lumenapiuser'_ and its password _'lumenpass'_.
 
 If the last line returns an error like `FATAL:  database "lumenapi" does not exist`. You should exit postgres by running `\q`. And run the following command: `createdb lumenapi`. After this, log back into postgres and grant all privileges to the user _lumenapiuser_ on the _lumenapi_ database again.
 
@@ -110,7 +114,38 @@ php -S localhost:8000 -t public
 
 This will serve the project on `http://localhost:8000/`. If this gives you an `Address already in use` error, try running your application on a different port by changing `8000` into `8080` (for example). For example, I have many projects running simultaneously, so I run this project on port 8085.
 
-If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/chrome/)) to `http://localhost:8000/`, you shold see something like: **Lumen (5.8.4) (Laravel Components 5.8.\*)**
+You will now see _something like this_:
+
+```sh
+HP 7.3.4 Development Server started at Thu May  2 08:09:55 2019
+Listening on http://localhost:8080
+Document root is /Users/username/Projects/Lumen-API/public
+Press Ctrl-C to quit.
+```
+
+After running this command, you can open a new tab in your Terminal, because this command will return things coming from `http://localhost:8000/`.
+
+If you navigate in your favorite browser (i.e. [Chrome](https://www.google.com/chrome/)) to `http://localhost:8000/`, you shold see something like: **Lumen (5.8.4) (Laravel Components 5.8.\*)**. If you go to your Terminal again, you'll see _something like this_:
+
+```sh
+[Thu May  2 08:10:11 2019] [::1]:49378 [200]: /
+[Thu May  2 08:10:11 2019] [::1]:49381 [404]: /favicon.ico - No such file or directory
+```
+
+## Database connection
+
+We've talked about editting your `APP_KEY` inside `.env`. Open `.env` again. Make sure `APP_URL` is the full URL of where you run your project. So that might be `http://localhost:8000/` thanks to the command: `php -S localhost:8000 -t public`. If you're running on another port number, you should change that in the value of `APP_URL` as well. Edit the next variables as well:
+
+```
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=yourdatabasename
+DB_USERNAME=yourusername
+DB_PASSWORD=yourpassword
+```
+
+Of course _'yourdatabasename'_, _'yourusername'_ and _'yourpassword'_ should be replaced with whatever you set when creating the database and setting up its user.
 
 ----------
 

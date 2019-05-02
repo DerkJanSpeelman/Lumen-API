@@ -18,9 +18,9 @@ composer
 psql --version
 ```
 
-## Installation
+## Installation of Lumen
 
-Install Lumen using your shell or terminal. Open your terminal again if you closed it.
+[Install Lumen](https://lumen.laravel.com/docs) using your shell or terminal. Open your terminal again if you closed it.
 
 Navigate to the location where you want the project folder to be created. In your terminal you can navigate like this. Where `\Users\username\folder` is the location you want to navigate to.
 
